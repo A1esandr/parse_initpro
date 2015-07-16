@@ -15,11 +15,11 @@ DEFAULT CHARACTER SET = utf8");
 echo 'ok';
 $table2 = $db->rawQuery(
 "CREATE TABLE IF NOT EXISTS
-    `doc` (
+    `au_doc` (
         `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
         `auction_id` INT NOT NULL,
-        `doc_name` CHAR(256) NOT NULL,
-        `doc_link` CHAR(256) NOT NULL,
+        `au_doc_name` CHAR(250) NOT NULL,
+        `au_doc_link` CHAR(250) NOT NULL,
         PRIMARY KEY(`id`)
     )
 ENGINE = InnoDB
